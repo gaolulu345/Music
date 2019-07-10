@@ -12,14 +12,7 @@
           <mt-cell v-for="n in 7" :title="'发现 ' + n" />
         </mt-tab-container-item>
         <mt-tab-container-item id="tab4">
-          <div class="page-part">
-		   <!-- cell -->
-            <mt-cell v-for="n in 12" :title="'我的 ' + n" />
-          </div>
-          <router-link to="/">
-		   <!-- button -->
-            <mt-button type="danger" size="large">退出</mt-button>
-          </router-link>
+          <Mine></Mine>
         </mt-tab-container-item>
       </mt-tab-container>
 
@@ -48,12 +41,14 @@
 <script>
 // @ is an alias to /src
 import Home from '@/views/Home.vue'
+import Mine from '@/views/Mine.vue'
 
 
 export default {
   name: 'footer',
   components: {
-    Home
+    Home,
+    Mine
   },
 data() {
     return {
@@ -64,6 +59,9 @@ data() {
 }
 </script>
 <style>
+.mint-tab-container{
+  margin-bottom: 5.5rem;
+}
 .mint-tabbar{
   position: fixed!important;
 }
