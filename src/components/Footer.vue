@@ -39,7 +39,7 @@
         </mt-tab-item>
         <mt-tab-item id="tab4">
             <img slot="icon" src="../assets/logo.png">
-            tab4
+            我的
         </mt-tab-item>
     </mt-tabbar>
   </div>
@@ -63,3 +63,9 @@ data() {
 
 }
 </script>
+<style>
+.mint-tabbar{
+  position: fixed!important;
+}
+</style>
+
