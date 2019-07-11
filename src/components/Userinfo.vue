@@ -2,6 +2,7 @@
   <div class="userinfo">
       <h2>用户信息</h2>
       <div class="avatar"></div>
+      <div class="name">用户名<span>♀</span></div>
     
   </div>
 </template>
@@ -20,13 +21,25 @@ export default {
 .userinfo{
     height:10rem;
     background: #666;
+    position: relative;
 }
 .avatar{
-    width: 3rem;
-    height: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
     background: #fff;
-    
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+.name{
+    position: absolute;
+    top: 4rem;
+    left: 10rem;;
+    font-size: 1.6rem;
+}
+.name span{
+    margin-left: 1rem;
 }
 
 </style>
