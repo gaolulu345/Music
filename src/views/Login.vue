@@ -1,6 +1,7 @@
 <template>
   <div class="login">
-    登录
+    <h2>登录</h2>
+    <img src="../assets/56f.jpg">
     <div class="loginform">
         <van-field
             v-model="username"
@@ -57,10 +58,13 @@ export default {
 
 </script>
 <style scoped>
+img{
+    width: 100%;
+}
 .login .loginform{
     width: 84%;
     margin: 0 auto;
-    margin-top: 40%;
+    margin-top: 22%;
 }
 .van-button{
     width: 80%;
