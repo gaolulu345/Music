@@ -35,7 +35,7 @@ export default {
 .name{
     position: absolute;
     top: 4rem;
-    left: 10rem;;
+    left: 10rem;
     font-size: 1.6rem;
 }
 .name span{
